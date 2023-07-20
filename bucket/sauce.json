@@ -4,7 +4,7 @@
     "homepage": "https://github.com/DanCardin/sauce",
     "license": "Apache-2.0 license ",
     "url": "https://github.com/DanCardin/sauce/releases/download/v0.9.0/sauce.exe",
-    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hash": "40696dc9398f3fcfe40d0e4ee318fa67433023f089f5ccad10673c8ed11a7252",
     "bin": "sauce.exe",
     "checkver": {
         "github": "https://github.com/DanCardin/sauce",
