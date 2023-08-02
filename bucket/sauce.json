@@ -7,7 +7,7 @@
     "hash": "40696dc9398f3fcfe40d0e4ee318fa67433023f089f5ccad10673c8ed11a7252",
     "bin": "sauce.exe",
     "checkver": {
-        "github": "https://github.com/DanCardin/sauce",
+        "github": "https://github.com/DanCardin/sauce"
     },
     "autoupdate": {
         "url": "https://github.com/DanCardin/sauce/releases/download/v$version/sauce.exe"
