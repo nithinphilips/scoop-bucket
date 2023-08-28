@@ -1,0 +1,15 @@
+{
+    "version": "0.4.1",
+    "description": "Find and replace text in source files ",
+    "homepage": "https://github.com/Splode/fname",
+    "license": "MIT license",
+    "url": "https://github.com/Splode/fname/releases/download/v0.4.1/fname_0.4.1_Windows_x86_64.tar.gz",
+    "hash": "0faf68f53d2baca5a9464a89484c92f44b6c5c9e35e30567cb9952d346a8538c",
+    "bin": "fname.exe",
+    "checkver": {
+        "github": "https://github.com/Splode/fname",
+    },
+    "autoupdate": {
+        "url": "https://github.com/Splode/fname/releases/download/v$version/fname_$version_Windows_x86_64.tar.gz"
+    }
+}
