@@ -26,12 +26,6 @@
             },
             "32bit": {
                 "url": "https://github.com/Corsinvest/cv4pve-cli/releases/download/v$version/cv4pve-cli.exe-win-x86.zip"
-            },
-            "arm": {
-                "url": "https://github.com/Corsinvest/cv4pve-cli/releases/download/v$version/cv4pve-cli.exe-win-arm.zip"
-            },
-            "arm64": {
-                "url": "https://github.com/Corsinvest/cv4pve-cli/releases/download/v$version/cv4pve-cli.exe-win-arm64.zip"
             }
         }
     }
