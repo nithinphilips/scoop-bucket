@@ -7,7 +7,7 @@
     "hash": "0faf68f53d2baca5a9464a89484c92f44b6c5c9e35e30567cb9952d346a8538c",
     "bin": "fname.exe",
     "checkver": {
-        "github": "https://github.com/Splode/fname",
+        "github": "https://github.com/Splode/fname"
     },
     "autoupdate": {
         "url": "https://github.com/Splode/fname/releases/download/v$version/fname_$version_Windows_x86_64.tar.gz"

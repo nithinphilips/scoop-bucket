@@ -3,27 +3,17 @@
 <!-- Uncomment the following line after replacing placeholders -->
 [![Tests](https://github.com/nithinphilips/scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/nithinphilips/scoop-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/nithinphilips/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/nithinphilips/scoop-bucket/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+Nithin's personal [Scoop](https://scoop.sh) bucket.
 
-## How do I use this template?
+## Applications
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
+* [birt](https://eclipse-birt.github.io/birt-website) - With BIRT you can create data visualizations, dashboards and reports
+* [cv4pve-cli](https://github.com/Corsinvest/cv4pve-cli) - Cli for Proxmox VE (Command Line Interfaces)
+* [fname](https://github.com/Splode/fname) - Find and replace text in source files
+* [odel](https://github.com/nithinphilips/odel) - A tool to upload file to TRIRIGA using Data Integrator.
+* [qsv](https://github.com/jqnatividad/qsv) - qsv is a command line program for indexing, slicing, analyzing, splitting, enriching, validating & joining CSV files.
+* [ruplacer](https://github.com/your-tools/ruplacer) - Find and replace text in source files
+* [sauce](https://github.com/DanCardin/sauce) - A tool to help manage context/project specific shell-things like environment variables.
 
 ## How do I install these manifests?
 
