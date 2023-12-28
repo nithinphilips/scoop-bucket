@@ -1,13 +1,18 @@
 {
-    "version": "0.8.1",
+    "version": "0.8.2",
     "description": "Find and replace text in source files ",
     "homepage": "https://github.com/your-tools/ruplacer",
     "license": "BSD-3-Clause license",
-    "url": "https://github.com/your-tools/ruplacer/releases/download/v0.8.1/ruplacer-windows.exe",
-    "hash": "469f78f2ef0dbac5a117ca566d8884499e3c9d03f4bc4cc9c2f55d7d335fa3db",
-    "bin": [["ruplacer-windows.exe", "ruplacer"]],
+    "url": "https://github.com/your-tools/ruplacer/releases/download/v0.8.2/ruplacer-windows.exe",
+    "hash": "24054cdac83ab5ff888880d2941072094632e90a1d0477ccba536ca3c1e8731e",
+    "bin": [
+        [
+            "ruplacer-windows.exe",
+            "ruplacer"
+        ]
+    ],
     "checkver": {
-        "github": "https://github.com/your-tools/ruplacer",
+        "github": "https://github.com/your-tools/ruplacer"
     },
     "autoupdate": {
         "url": "https://github.com/your-tools/ruplacer/releases/download/v$version/ruplacer-windows.exe"

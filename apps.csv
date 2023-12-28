@@ -1,0 +1,132 @@
+main/git,main,Distributed version control system,https://gitforwindows.org
+extras/sfsu,extras,"Stupid Fast Scoop Utilities. Incredibly fast replacements for commonly used Scoop commands, written in Rust.",https://github.com/jewlexx/sfsu
+extras/vcredist,extras,Microsoft Visual C++ Redistributables bundle for all major versions,https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+main/bat,main,A cat(1) clone with syntax highlighting and Git integration,https://github.com/sharkdp/bat
+main/bombardier,main,Fast cross-platform HTTP benchmarking tool written in Go,https://github.com/codesenberg/bombardier
+main/caddy,main,HTTP/2 web server with automatic HTTPS,https://caddyserver.com
+main/csview,main,A high performance csv viewer with cjk/emoji support,https://github.com/wfxr/csview
+main/delta,main,A syntax-highlighter for git and diff output,https://github.com/dandavison/delta
+main/difftastic,main,A structural diff that understands syntax,https://difftastic.wilfred.me.uk
+main/direnv,main,load or unload environment variables depending on the current directory,https://direnv.net
+main/dog,main,Command-line DNS client,https://dns.lookup.dog
+main/dua,main,Disk Usage Analyzer,https://github.com/Byron/dua-cli
+main/dust,main,du(1) - File space usage analyzer,https://github.com/bootandy/dust
+main/erdtree,main,A multi-threaded file-tree visualizer and disk usage analyzer.,https://github.com/solidiquis/erdtree
+main/exiftool,main,"A command-line application for reading, writing and editing meta information in a wide variety of files.",https://exiftool.org
+main/fd,main,"A simple, fast and user-friendly alternative to 'find'.",https://github.com/sharkdp/fd
+main/fq,main,"Tool, language and decoders for working with binary data.",https://github.com/wader/fq
+main/git-cliff,main,A highly customizable Changelog Generator that follows Conventional Commit specifications,https://github.com/orhun/git-cliff
+main/gping,main,"Ping, but with a graph",https://github.com/orf/gping
+main/grex,main,A regular expression generator,https://github.com/pemistahl/grex
+main/gron,main,Transform JSON into discrete assignments to make it easier to grep and see the absolute 'path'.,https://github.com/tomnomnom/gron
+main/hexyl,main,"Hex viewer, which uses colored output to distinguish different categories of bytes.",https://github.com/sharkdp/hexyl
+main/hugo-extended,main,Speedy and flexible static site generator. (with Sass/SCSS support),https://gohugo.io
+main/jd-cli,main,Command line Java Decompiler,https://github.com/intoolswetrust/jd-cli
+extras/jd-gui,extras,A standalone Java Decompiler GUI,https://github.com/java-decompiler/jd-gui
+main/jo,main,A tool for creating JSON objects from CLI,https://github.com/jpmens/jo
+main/jq,main,Lightweight and flexible command-line JSON processor,https://stedolan.github.io/jq/
+main/htmlq,main,"Like jq, but for HTML. (Uses CSS selectors to extract bits of content from HTML files)",https://github.com/mgdm/htmlq
+main/just,main,A command runner written in rust,https://just.systems
+extras/librespeed-cli,extras,"Command line client for LibreSpeed.org, a speedtest website",https://github.com/librespeed/speedtest-cli
+main/lsd,main,The next gen ls command,https://github.com/Peltoche/lsd
+main/mdbook,main,Create a book from markdown files.,https://github.com/rust-lang/mdBook
+main/mdcat,main,cat for markdown,https://github.com/swsnr/mdcat
+main/miniserve,main,a CLI tool to serve files and dirs over HTTP,https://github.com/svenstaro/miniserve
+main/miller,main,"Like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines, and positionally-indexed.",https://miller.readthedocs.io
+main/nomino,main,Batch rename utility for developers,https://github.com/yaa110/nomino
+main/ouch,main,Painless compression and decompression for your terminal.,https://github.com/ouch-org/ouch
+main/packer,main,Automates the creation of any type of virtual machine image.,https://www.packer.io
+main/pastel,main,"A command-line tool to generate, analyze, convert and manipulate colors.",https://github.com/sharkdp/pastel
+main/procs,main,A modern replacement for ps(1),https://github.com/dalance/procs
+main/pup,main,Parsing HTML at the command line,https://github.com/ericchiang/pup
+extras/regexp,extras,Enhanced Registry editor/explorer,https://github.com/zodiacon/RegExp
+main/ripgrep,main,Recursively searches directories for a regex pattern.,https://github.com/BurntSushi/ripgrep
+main/rga,main,"ripgrep-all: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.",https://github.com/phiresky/ripgrep-all
+main/shellcheck,main,Static analysis tool for shell scripts,https://shellcheck.net/
+main/silicon,main,Create beautiful image of your source code,https://github.com/Aloxaf/silicon
+main/speedtest-cli,main,Internet connection speed and performance tester,https://www.speedtest.net/apps/cli
+main/starship,main,"The minimal, blazing fast, and extremely customizable prompt for any shell!",https://starship.rs
+main/btop,main,"Resource monitor that shows usage and stats for processor, memory, disks, network, processes and services.",https://github.com/aristocratos/btop4win
+main/pandoc,main,Universal markup converter,https://pandoc.org
+main/trid,main,A utility designed to identify file types from their binary signatures.,https://www.mark0.net/soft-trid-e.html
+extras/filelight,extras,Disk usage visualizer,https://apps.kde.org/filelight
+main/terraform,main,Create and manage infrastructure as code using simple declarative configuration files.,https://www.terraform.io
+main/terraform-docs,main,Generate documentation from Terraform modules in various output formats,https://github.com/terraform-docs/terraform-docs
+main/terraformer,main,"Tool to generate terraform files from existing infrastructure (reverse Terraform), i.e. infrastructure to code.",https://github.com/GoogleCloudPlatform/terraformer
+main/aztfexport,main,A tool to bring your existing Azure resources under the management of Terraform.,https://github.com/Azure/aztfexport
+main/tokei,main,"Count your code, quickly.",https://github.com/XAMPPRocky/tokei
+main/upx,main,"UPX is a free, portable, extendable, high-performance executable packer for several executable formats",https://upx.github.io/
+nirsoft/usbdeview,nirsoft,"USBDeview is a small utility that lists all USB devices that currently connected to your computer, as well as all USB devices that you previously used. For each USB device, extended information is displayed: Device name/description, device type, serial number (for mass storage devices), the date/time that device was added, VendorID, ProductID, and more... USBDeview also allows you to uninstall USB devices that you previously used, and disconnect USB devices that are currently connected to your computer. You can also use USBDeview on a remote computer, as long as you login to that computer with admin user.",https://www.nirsoft.net/utils/usb_devices_view.html
+nirsoft/shellexview,nirsoft,"Shell Extensions are in-process COM objects which extend the abilities of Windows operating system. Most shell extensions are automatically installed by the operating system, but there are also many other applications that install additional shell extension components. For example: If you install WinZip on your computer, you'll see a special WinZip menu when you right-click on a Zip file. This menu is created by adding a shell extension to the system. The ShellExView utility displays the details of shell extensions installed on your computer, and allows you to easily disable and enable each shell extension.",https://www.nirsoft.net/utils/shexview.html
+nirsoft/shellmenuview,nirsoft,"ShellMenuView is a small utility that display the list of static menu items that appeared in the context menu when you right-click a file/folder on Windows Explorer, and allows you to easily disable unwanted menu items.",https://www.nirsoft.net/utils/shell_menu_view.html
+extras/context-menu-manager,extras,A program to manage the Windows right-click context menu.,https://bluepointlilac.github.io/ContextMenuManager/
+main/watchexec,main,Execute commands in response to file modifications,https://github.com/watchexec/watchexec
+main/xh,main,Friendly and fast tool for sending HTTP requests,https://github.com/ducaale/xh/
+main/xsv,main,A fast CSV command line toolkit written in Rust,https://github.com/BurntSushi/xsv
+main/zola,main,A fast static site generator in a single binary with everything built-in,https://www.getzola.org
+main/zoxide,main,A faster way to navigate your filesystem,https://github.com/ajeetdsouza/zoxide
+extras/keystore-explorer,extras,An open source GUI replacement for the Java command-line utilities keytool and jarsigner.,https://keystore-explorer.org/
+main/azure-cli,main,Microsoft Azure CLI 2.0,https://aka.ms/cli
+main/azure-ps,main,"PowerShell cmdlets for developers and administrators to develop, deploy and manage Microsoft Azure applications.",https://aka.ms/azpsdocs
+main/azcopy,main,Command-line utility to download/upload blobs and files from Microsoft Azure storage accounts,https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10
+main/oh-my-posh,main,A prompt theme engine for any shell,https://ohmyposh.dev
+main/graphviz,main,Open source graph visualization software.,https://www.graphviz.org/
+extras/draw.io,extras,Professional diagramming,https://www.diagrams.net
+main/usql,main,Universal command-line interface for SQL databases,https://github.com/xo/usql
+main/sqlcl,main,Oracle SQL Developer Command Line (SQLcl),https://www.oracle.com/database/sqldeveloper/technologies/sqlcl
+main/oracle-instant-client-sqlplus,main,The SQL*Plus command line tool for SQL and PL/SQL queries with Oracle Instant Client.,https://www.oracle.com/database/technologies/instant-client.html
+extras/processhacker,extras,"A powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware.",http://processhacker.sourceforge.net/
+sysinternals/sysinternals-suite,sysinternals,"A set of utilities to manage, diagnose, troubleshoot, and monitor a Windows environment.",https://learn.microsoft.com/sysinternals
+extras/coretemp,extras,Monitor processor temperature and other vital information.,https://www.alcpu.com/CoreTemp/
+nerd-fonts/JetBrains-Mono,nerd-fonts,JetBrains Mono. A typeface for developers.,https://www.jetbrains.com/lp/mono/
+nerd-fonts/JetBrainsMono-NF,nerd-fonts,"Nerd Fonts patched 'JetBrainsMono' Font family. (Normal version, Nerd Fonts Symbol/Icon could be 1 or 2 cell wide)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/JetBrainsMono-NF-Mono,nerd-fonts,"Nerd Fonts patched 'JetBrainsMono' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/JetBrainsMono-NF-Propo,nerd-fonts,"Nerd Fonts patched 'JetBrainsMono' Font family. (Proportional version, for GUI usecases)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/Cascadia-Code,nerd-fonts,"A fun, new monospaced font that includes programming ligatures and is designed to enhance the modern look and feel of the Windows Terminal.",https://github.com/microsoft/cascadia-code
+nerd-fonts/CascadiaCode-NF,nerd-fonts,"Nerd Fonts patched 'CascadiaCode' Font family. (Normal version, Nerd Fonts Symbol/Icon could be 1 or 2 cell wide)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/CascadiaCode-NF-Mono,nerd-fonts,"Nerd Fonts patched 'CascadiaCode' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/CascadiaCode-NF-Propo,nerd-fonts,"Nerd Fonts patched 'CascadiaCode' Font family. (Proportional version, for GUI usecases)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/DroidSansMono-NF,nerd-fonts,"Nerd Fonts patched 'DroidSansMono' Font family. (Normal version, Nerd Fonts Symbol/Icon could be 1 or 2 cell wide)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/DroidSansMono-NF-Mono,nerd-fonts,"Nerd Fonts patched 'DroidSansMono' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/DroidSansMono-NF-Propo,nerd-fonts,"Nerd Fonts patched 'DroidSansMono' Font family. (Proportional version, for GUI usecases)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/Terminus-NF,nerd-fonts,"Nerd Fonts patched 'Terminus' Font family. (Normal version, Nerd Fonts Symbol/Icon could be 1 or 2 cell wide)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/Terminus-NF-Propo,nerd-fonts,"Nerd Fonts patched 'Terminus' Font family. (Proportional version, for GUI usecases)",https://github.com/ryanoasis/nerd-fonts
+nerd-fonts/Terminus-NF-Mono,nerd-fonts,"Nerd Fonts patched 'Terminus' Font family. (Monospace version, Nerd Fonts Symbol/Icon will be always 1 cell wide)",https://github.com/ryanoasis/nerd-fonts
+main/gh,main,Official GitHub CLI,https://cli.github.com
+main/act,main,Local Github actions runner.,https://github.com/nektos/act/
+lemon/dnscontrol,lemon,Synchronize your DNS to multiple providers from a simple DSL.,https://stackexchange.github.io/dnscontrol/
+extras/hwinfo,extras,"Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS",https://www.hwinfo.com
+main/pdfcpu,main,"A PDF processor written in Go, supporting encryption.",https://pdfcpu.io
+main/packer,main,Automates the creation of any type of virtual machine image.,https://www.packer.io
+main/broot,main,A new way to see and navigate directory trees,https://dystroy.org/broot/
+main/gsudo,main,A Sudo for Windows,https://gerardog.github.io/gsudo
+main/mdbook,main,Create a book from markdown files.,https://github.com/rust-lang/mdBook
+main/osquery,main,"SQL powered operating system instrumentation, monitoring, and analytics",https://osquery.io/
+main/scrcpy,main,Display and control your Android device,https://github.com/Genymobile/scrcpy
+extras/qownnotes,extras,Plain-text notepad and todo-list manager with markdown support and Nextcloud / ownCloud integration,https://www.qownnotes.org/
+main/difftastic,main,A structural diff that understands syntax,https://difftastic.wilfred.me.uk
+extras/dngrep,extras,"Graphical GREP tool to search across text files, Word and Excel documents, PDFs and archives",http://dngrep.github.io/
+main/jc,main,"Convert the output of CLI, file-types, and common strings to JSON, YAML, or Dictionaries",https://kellyjonbrazil.github.io/jc/
+extras/ferdium,extras,All-in-one messaging apps for various services,https://ferdium.org/
+main/ipinfo-cli,main,This is the official CLI for the IPinfo.io IP address API,https://github.com/ipinfo/cli
+main/yq,main,A portable command-line YAML processor,https://mikefarah.gitbook.io/yq/
+extras/soapui,extras,A functional testing solution for APIs and web services.,https://www.soapui.org/
+extras/resource-hacker,extras,Resource compiler & decompiler for Windows applications,http://www.angusj.com/resourcehacker/
+main/diffsitter,main,A tree-sitter based AST difftool to get meaningful semantic diffs,https://github.com/afnanenayet/diffsitter
+main/go,main,"An open source programming language that makes it easy to build simple, reliable, and efficient software.",https://golang.org
+main/rustup,main,Manage multiple rust installations with ease,https://rustup.rs
+main/nodejs-lts,main,"As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. (Long Term Support)",https://nodejs.org
+main/dotnet-sdk,main,".NET is a free, cross-platform, open source developer platform for building many different types of applications.",https://www.microsoft.com/net/
+main/nuget,main,The package manager for .NET.,https://www.nuget.org/
+java/graalvm22,java,"High-performance, embeddable, polyglot Virtual Machine for JVM-langs (Java, Scala, Kotlin), JavaScript/NodeJS, Python, Ruby, R, and LLVM-langs (C, C++, Rust)",https://www.graalvm.org/
+java/temurin8-jdk,java,Eclipse Temurin is a runtime provided by Eclipse Adoptium for general use across the Java ecosystem,https://adoptium.net
+java/temurin-jdk,java,Eclipse Temurin is a runtime provided by Eclipse Adoptium for general use across the Java ecosystem,https://adoptium.net
+java/icedtea-web,java,"The IcedTea-Web project provides a Free Software web browser plugin running applets written in the Java programming language and an implementation of Java Web Start, originally based on the NetX project",https://github.com/AdoptOpenJDK/IcedTea-Web
+main/maven,main,Software project management and comprehension tool,https://maven.apache.org/
+main/ruff,main,"An extremely fast Python linter, written in Rust",https://github.com/charliermarsh/ruff
+main/pyoxidizer,main,A modern Python application packaging and distribution tool,https://github.com/indygreg/PyOxidizer
+main/aws,main,Unified tool to manage AWS services,https://aws.amazon.com/cli/
+extras/calibre,extras,Powerful and easy to use e-book manager,https://calibre-ebook.com
+extras/libreoffice,extras,"Powerful and free office suite, a successor to OpenOffice(.org).",https://libreoffice.org/
+extras/etcher,extras,"balenaEtcher lets you flash OS images to SD cards & USB drives, safely and easily.",https://www.balena.io/etcher/
+extras/carnac,extras,A utility to give some insight into how you use your keyboard.,http://carnackeys.com/

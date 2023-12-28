@@ -40,6 +40,7 @@ import sys
 import logging
 import json
 import os
+import csv
 
 from argh import ArghParser, completion, set_default_command, arg
 from argcomplete.completers import ChoicesCompleter,  FilesCompleter
@@ -62,6 +63,10 @@ def process():
     All other lines are left as-is.
     """
 
+    fieldnames = ['package', 'bucket', 'description', 'homepage']
+    writer = csv.writer(sys.stdout)
+    writer.writerow(fieldnames)
+
     # Usually on read from stdin if a file is not given or given as "-"
     lines = read_stdin_lines()
     if lines:
@@ -75,23 +80,32 @@ def process():
 
                 parts = package.split("/")
 
-                if len(parts) == 2:
+                if len(parts) == 1:
+                    bucket = "main"
+                    app = parts[0]
+                elif len(parts) == 2:
                     bucket = parts[0]
                     app = parts[1]
 
-                    logging.debug(f"Bucket: {bucket}, App: {app}")
+                logging.debug(f"Bucket: {bucket}, App: {app}")
+                app_json = os.path.join("/cygdrive/c/Users/Nithin/scoop/buckets", bucket, "bucket", f"{app}.json")
 
-                    app_json = os.path.join("/cygdrive/c/Users/Nithin/scoop/buckets", bucket, "bucket", f"{app}.json")
-
+                if os.path.exists(app_json):
                     with open(app_json) as f:
                         d = json.load(f)
                         app_desc = d['description']
-                        sys.stdout.write(f"{prefix}#{app_desc}\n")
-                        sys.stdout.write(f"{prefix}scoop install {package}\n")
+                        app_url = d['homepage']
+                        #sys.stdout.write(f"{prefix}#{app_desc}\n")
+                        #sys.stdout.write(f"{prefix}scoop install {package}\n")
+                        #sys.stdout.write(f"{package},{bucket},{app_desc},{app_url}\n")
+                        writer.writerow([package,bucket,app_desc,app_url])
+                else:
+                    logging.debug(f"NOMATCH: {line}")
+                    #sys.stdout.write(line)
 
             else:
                 logging.debug(f"NOMATCH: {line}")
-                sys.stdout.write(line)
+                #sys.stdout.write(line)
 
         logging.debug("")
 
