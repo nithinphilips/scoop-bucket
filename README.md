@@ -1,4 +1,4 @@
-# Scoop Bucket Template
+# Nithin's Scoop Bucket
 
 [![Tests](https://github.com/nithinphilips/scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/nithinphilips/scoop-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/nithinphilips/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/nithinphilips/scoop-bucket/actions/workflows/excavator.yml)
 
