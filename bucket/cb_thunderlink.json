@@ -1,0 +1,29 @@
+{
+    "version": "1_7_3",
+    "description": "CB Thunderlink allows you to create direct link to thunderbird emails",
+    "homepage": "https://github.com/CamielBouchier/cb_thunderlink",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CamielBouchier/cb_thunderlink/releases/download/Release_1_7_3/cb_thunderlink_windows.zip",
+            "hash": "c8b7ae7f817799384aaebdf23a39c8218433a558b181b3eb1bd34abc80e07f4e"
+        }
+    },
+    "post_install": [
+        "& gsudo \"$dir\\cb_thunderlink\\cb_thunderlink.exe\" register"
+    ],
+    "bin": [
+        [
+            "cb_thunderlink/cb_thunderlink.exe",
+            "cb_thunderlink"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CamielBouchier/cb_thunderlink/releases/download/$version/cb_thunderlink_windows.zip"
+            }
+        }
+    }
+}
