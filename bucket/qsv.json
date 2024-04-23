@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/jqnatividad/qsv/releases/download/0.126.0/qsv-0.126.0-x86_64-pc-windows-msvc.zip",
-            "hash": "a81d7058d985a39fbcc2f3c50a142fddadce530f7e3fec62726c72a3f3b2027b"
+            "hash": "d8fff2067dbc0e59cd2771c38f5034a3783edc0340187c572f7328f751b43a05"
         },
         "32bit": {
             "url": "https://github.com/jqnatividad/qsv/releases/download/0.126.0/qsv-0.126.0-i686-pc-windows-msvc.zip",
