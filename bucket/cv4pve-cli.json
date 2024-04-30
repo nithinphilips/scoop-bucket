@@ -1,16 +1,16 @@
 {
-    "version": "1.8.1",
+    "version": "1.8.2",
     "description": "Cli for Proxmox VE (Command Line Interfaces)",
     "homepage": "https://github.com/Corsinvest/cv4pve-cli",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Corsinvest/cv4pve-cli/releases/download/v1.8.1/cv4pve-cli.exe-win-x64.zip",
-            "hash": "13a52f1c44dd8e76f397f55194b548987c07815b046757b262db6dfae37dd410"
+            "url": "https://github.com/Corsinvest/cv4pve-cli/releases/download/v1.8.2/cv4pve-cli.exe-win-x64.zip",
+            "hash": "f792d6a87b2c4bdd1975de282ac5d1d12eeba5099c5c38fcc4d4f6feceabf81f"
         },
         "32bit": {
-            "url": "https://github.com/Corsinvest/cv4pve-cli/releases/download/v1.8.1/cv4pve-cli.exe-win-x86.zip",
-            "hash": "42511ce06534e95cfeb860871c281c346456e764252a437b11ccfdfdf8d51dc3"
+            "url": "https://github.com/Corsinvest/cv4pve-cli/releases/download/v1.8.2/cv4pve-cli.exe-win-x86.zip",
+            "hash": "4ae966aa0153b45244f71ba2b9633b3d7ac7ea406b0e6d77eb20ba514e349d35"
         }
     },
     "bin": [
