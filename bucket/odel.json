@@ -1,13 +1,13 @@
 {
-    "version": "1.3.0",
+    "version": "1.3.1",
     "description": "A tool to upload file to TRIRIGA using Data Integrator.",
     "homepage": "https://github.com/nithinphilips/odel",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/nithinphilips/odel/releases/download/v1.3.0/odel-1.3.0-x86_64-pc-windows-msvc-bin.zip",
-    "hash": "953cf3271d4dd32193ff7df2fc347fd5320f3d86bff10c79cc94ef65522361a2",
+    "url": "https://github.com/nithinphilips/odel/releases/download/v1.3.1/odel-1.3.1-x86_64-pc-windows-msvc-bin.zip",
+    "hash": "e1a6cc38e2088792586e3fd5117bb16b9d13a7754a2a6ebf7b861767a5633eff",
     "bin": [
         [
-            "odel-1.3.0-x86_64-pc-windows-msvc/odel.exe",
+            "odel-1.3.1-x86_64-pc-windows-msvc/odel.exe",
             "odel"
         ]
     ],
