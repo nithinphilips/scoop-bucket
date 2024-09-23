@@ -23,6 +23,10 @@ scoop bucket add scoop-bucket https://github.com/nithinphilips/scoop-bucket
 scoop install scoop-bucket/<manifestname>
 ```
 
+## How do I create new manifests?
+
+Use `bin/github2scoop.ps1`
+
 ## How do I contribute new manifests?
 
 To make a new manifest contribution, please read the [Contributing
