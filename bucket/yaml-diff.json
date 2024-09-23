@@ -1,0 +1,28 @@
+{
+    "autoupdate": {
+        "32bit": {
+            "url": "https://github.com/sters/yaml-diff/releases/download/v$version/yaml-diff_$version_windows_386.tar.gz"
+        },
+        "64bit": {
+            "url": "https://github.com/sters/yaml-diff/releases/download/v$version/yaml-diff_$version_windows_amd64.tar.gz"
+        }
+    },
+    "bin": "yaml-diff.exe",
+    "architecture": {
+        "32bit": {
+            "hash": "592cd4c36f65fb56a82a32385861dfb7d41f8c631592f197c34610a11635db62",
+            "url": "https://github.com/sters/yaml-diff/releases/download/v1.3.2/yaml-diff_1.3.2_windows_386.tar.gz"
+        },
+        "64bit": {
+            "hash": "e4462966aa627d0db79ec40430b04ef24bff7ea94b62a0610898a03d7bada0db",
+            "url": "https://github.com/sters/yaml-diff/releases/download/v1.3.2/yaml-diff_1.3.2_windows_amd64.tar.gz"
+        }
+    },
+    "homepage": "https://github.com/sters/yaml-diff",
+    "version": "1.3.2",
+    "license": "MIT license",
+    "description": "Make a diff between 2 yaml files.",
+    "checkver": {
+        "github": "https://github.com/sters/yaml-diff"
+    }
+}
