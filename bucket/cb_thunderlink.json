@@ -9,6 +9,7 @@
             "hash": "c8b7ae7f817799384aaebdf23a39c8218433a558b181b3eb1bd34abc80e07f4e"
         }
     },
+    "depends": "gsudo",
     "post_install": [
         "& gsudo \"$dir\\cb_thunderlink\\cb_thunderlink.exe\" register"
     ],
