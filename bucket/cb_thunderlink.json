@@ -10,9 +10,7 @@
         }
     },
     "depends": "gsudo",
-    "post_install": [
-        "& gsudo \"$dir\\cb_thunderlink\\cb_thunderlink.exe\" register"
-    ],
+    "post_install": "& gsudo \"$dir\\cb_thunderlink\\cb_thunderlink.exe\" register",
     "bin": [
         [
             "cb_thunderlink/cb_thunderlink.exe",

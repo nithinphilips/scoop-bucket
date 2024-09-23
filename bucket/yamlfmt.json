@@ -1,35 +1,37 @@
 {
+    "version": "0.13.0",
+    "description": "An extensible command line tool or library to format yaml files.",
     "homepage": "https://github.com/google/yamlfmt",
-    "autoupdate": {
-        "64bit": {
-            "url": "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_x86_64.tar.gz"
-        },
+    "license": "MIT license",
+    "architecture": {
         "arm64": {
-            "url": "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_arm64.tar.gz"
+            "url": "https://github.com/google/yamlfmt/releases/download/v0.13.0/yamlfmt_0.13.0_Windows_arm64.tar.gz",
+            "hash": "7cfa49397b563e0e88b6ba8445deb75ed4771d8e812ef32e67cd7e9247abeaff"
         },
         "32bit": {
-            "url": "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_i386.tar.gz"
+            "url": "https://github.com/google/yamlfmt/releases/download/v0.13.0/yamlfmt_0.13.0_Windows_i386.tar.gz",
+            "hash": "aaea42adc1a5e35e384d891761a44548a1688a6d71cc805f4cb82da80555ed0d"
+        },
+        "64bit": {
+            "url": "https://github.com/google/yamlfmt/releases/download/v0.13.0/yamlfmt_0.13.0_Windows_x86_64.tar.gz",
+            "hash": "34b8cfb8768ba0c2292e0b4fbda5fb6b4afbb8fd6ffc3e03d5e03e6fc00b05de"
         }
     },
-    "license": "MIT license",
-    "description": "An extensible command line tool or library to format yaml files.",
     "bin": "yamlfmt.exe",
-    "version": "0.13.0",
     "checkver": {
         "github": "https://github.com/google/yamlfmt"
     },
-    "architecture": {
-        "64bit": {
-            "hash": "34b8cfb8768ba0c2292e0b4fbda5fb6b4afbb8fd6ffc3e03d5e03e6fc00b05de",
-            "url": "https://github.com/google/yamlfmt/releases/download/v0.13.0/yamlfmt_0.13.0_Windows_x86_64.tar.gz"
-        },
-        "arm64": {
-            "hash": "7cfa49397b563e0e88b6ba8445deb75ed4771d8e812ef32e67cd7e9247abeaff",
-            "url": "https://github.com/google/yamlfmt/releases/download/v0.13.0/yamlfmt_0.13.0_Windows_arm64.tar.gz"
-        },
-        "32bit": {
-            "hash": "aaea42adc1a5e35e384d891761a44548a1688a6d71cc805f4cb82da80555ed0d",
-            "url": "https://github.com/google/yamlfmt/releases/download/v0.13.0/yamlfmt_0.13.0_Windows_i386.tar.gz"
+    "autoupdate": {
+        "architecture": {
+            "arm64": {
+                "url": "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_arm64.tar.gz"
+            },
+            "32bit": {
+                "url": "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_i386.tar.gz"
+            },
+            "64bit": {
+                "url": "https://github.com/google/yamlfmt/releases/download/v$version/yamlfmt_$version_Windows_x86_64.tar.gz"
+            }
         }
     }
 }

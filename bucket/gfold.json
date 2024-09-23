@@ -1,21 +1,28 @@
 {
+    "version": "4.5.0",
+    "description": "CLI tool to help keep track of your Git repositories, written in Rust",
+    "homepage": "https://crates.io/crates/gfold",
+    "license": "MIT license",
+    "architecture": {
+        "64bit": {
+            "hash": "39f498daf5af9a6db1500498fb2a6911365b612d22e4d69f01c24ab024da25e0",
+            "url": "https://github.com/nickgerace/gfold/releases/download/4.5.0/gfold-windows-amd64.exe"
+        }
+    },
+    "bin": [
+        [
+            "gfold-windows-amd64.exe",
+            "gfold"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/nickgerace/gfold"
     },
-    "license": "MIT license",
-    "homepage": "https://crates.io/crates/gfold",
     "autoupdate": {
-        "64bit": {
-            "url": "https://github.com/nickgerace/gfold/releases/download/$version/gfold-windows-amd64.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nickgerace/gfold/releases/download/$version/gfold-windows-amd64.exe"
+            }
         }
-    },
-    "bin": [ ["gfold-windows-amd64.exe", "gfold"] ],
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/nickgerace/gfold/releases/download/4.5.0/gfold-windows-amd64.exe",
-            "hash": "39f498daf5af9a6db1500498fb2a6911365b612d22e4d69f01c24ab024da25e0"
-        }
-    },
-    "version": "4.5.0",
-    "description": "CLI tool to help keep track of your Git repositories, written in Rust"
+    }
 }
