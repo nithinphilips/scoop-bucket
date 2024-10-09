@@ -211,6 +211,8 @@ Write-Host "   If the app download just an exe named anything and you want the c
 Write-Host "       `"bin`": `"app`""
 Write-Host "   If the app download is an exe named 'app-windows-amd64.exe' and the command you want is 'app':"
 Write-Host "       `"bin`": [ [`"app-windows-amd64.exe`", `"app`"] ]"
+Write-Host "   If the app download just an archive with the exe in the root of the zip:"
+Write-Host "       `"bin`": `"app.exe`""
 Write-Host "   If the app download is an archive and the binary is in a sub directory 'app/app-windows-amd64.exe' and the command you want is 'app':"
 Write-Host "       `"bin`": [ [`"app/app-windows-amd64.exe`", `"app`"] ]"
 Write-Host ""
