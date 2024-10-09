@@ -1,0 +1,37 @@
+{
+    "version": "0.1.0",
+    "description": "CLI utility for uploading to filebrowser",
+    "homepage": "https://github.com/spotdemo4/filebrowser-upload",
+    "license": "MIT license",
+    "architecture": {
+        "arm64": {
+            "url": "https://github.com/spotdemo4/filebrowser-upload/releases/download/v0.1.0/filebrowser-upload_Windows_arm64.zip",
+            "hash": "31b092be8000b7d55ce832f9faa0f24db7f2dafcb7d94bb3fb46f1e335c7f49d"
+        },
+        "32bit": {
+            "url": "https://github.com/spotdemo4/filebrowser-upload/releases/download/v0.1.0/filebrowser-upload_Windows_i386.zip",
+            "hash": "99e1a5e18ac2412a47328f303ddd2f39ca80110826db7d80af9bc68055aedc51"
+        },
+        "64bit": {
+            "url": "https://github.com/spotdemo4/filebrowser-upload/releases/download/v0.1.0/filebrowser-upload_Windows_x86_64.zip",
+            "hash": "cf44514c350a87714e1dfb47b50413e529e95113e5b6df30b38d9142a3492f07"
+        }
+    },
+    "bin": "filebrowser-upload.exe",
+    "checkver": {
+        "github": "https://github.com/spotdemo4/filebrowser-upload"
+    },
+    "autoupdate": {
+        "architecture": {
+            "arm64": {
+                "url": "https://github.com/spotdemo4/filebrowser-upload/releases/download/v$version/filebrowser-upload_Windows_arm64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/spotdemo4/filebrowser-upload/releases/download/v$version/filebrowser-upload_Windows_i386.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/spotdemo4/filebrowser-upload/releases/download/v$version/filebrowser-upload_Windows_x86_64.zip"
+            }
+        }
+    }
+}
