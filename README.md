@@ -6,10 +6,12 @@ Nithin's personal [Scoop](https://scoop.sh) bucket.
 
 ## Applications
 
+* [act_runner](https://gitea.com/gitea/act_runner) - A runner for Gitea based on act.
 * [birt](https://eclipse-birt.github.io/birt-website) - With BIRT you can create data visualizations, dashboards and reports
 * [cb_thunderlink](https://github.com/CamielBouchier/cb_thunderlink) - CB Thunderlink allows you to create direct link to thunderbird emails
 * [cv4pve-cli](https://github.com/Corsinvest/cv4pve-cli) - Cli for Proxmox VE (Command Line Interfaces)
 * [dyff](https://github.com/homeport/dyff) - A diff tool for YAML files, and sometimes JSON
+* [filebrowser-upload](https://github.com/spotdemo4/filebrowser-upload) - CLI utility for uploading to filebrowser
 * [fname](https://github.com/Splode/fname) - Find and replace text in source files
 * [gfold](https://crates.io/crates/gfold) - CLI tool to help keep track of your Git repositories, written in Rust
 * [odel](https://github.com/nithinphilips/odel) - A tool to upload file to TRIRIGA using Data Integrator.

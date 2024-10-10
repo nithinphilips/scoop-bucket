@@ -31,6 +31,6 @@
                 "act_runner-$version-windows-amd64.exe",
                 "act_runner"
             ]
-        ],
+        ]
     }
 }
