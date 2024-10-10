@@ -35,7 +35,9 @@ scoop install scoop-bucket/<manifestname>
 
 If it's a GitHub hosted app, use `bin/github2scoop.ps1`
 
-In PowerShell terminal, run `Get-Help bin/github2scoop.ps1` for usage.
+If it's a Gitea hosted app, use `bin/gitea2scoop.ps1`
+
+In PowerShell terminal, run `Get-Help bin/github2scoop.ps1` or `Get-Help bin/gitea2scoop.ps1` for usage.
 
 For others, please read the [Contributing
 Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
