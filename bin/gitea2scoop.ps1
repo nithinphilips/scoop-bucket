@@ -192,9 +192,6 @@ ForEach($release in $githubRelease.assets){
         "url" = $release.browser_download_url.Replace($version, "`$version");
     };
 
-    if ($release.browser_download_url.Contains(".exe") && $scoopManifest["bin"] == "<fill-it-in>") {
-    }
-
     $index = $index + 1
 }
 
