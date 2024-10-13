@@ -17,7 +17,10 @@
             "cb_thunderlink"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/CamielBouchier/cb_thunderlink",
+        "regex": "/releases/tag/(?:Release_)?([\\d._]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
