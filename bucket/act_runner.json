@@ -18,7 +18,7 @@
     "checkver": {
         "url": "https://gitea.com/api/v1/repos/gitea/act_runner/releases/latest",
         "jsonpath": "$.tag_name",
-        "regex": "v([\\\\d.]+)"
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
