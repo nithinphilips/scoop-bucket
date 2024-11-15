@@ -174,7 +174,7 @@ ForEach($release in $githubRelease.assets){
         -or ($release.browser_download_url -ilike "*.rpm") `
         -or ($release.browser_download_url -ilike "*.deb") `
         -or ($release.browser_download_url -ilike "*.sha256") `
-	-or ($release.browser_download_url -ilike "*.vsix")
+        -or ($release.browser_download_url -ilike "*.vsix")
     ) {
         Write-Host "Skip $($release.browser_download_url)"
         continue
