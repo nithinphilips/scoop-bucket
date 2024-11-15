@@ -241,6 +241,9 @@ Write-Host "For more details, see https://github.com/ScoopInstaller/Scoop/wiki/A
 $fullManifestPath = (Resolve-Path $manifestFile)
 
 Write-Host "Test installation by running:"
-Write-Host " scoop install $fullManifestPath"
+Write-Host ""
+Write-Host "    scoop install '$fullManifestPath'"
+Write-Host ""
 Write-Host "Then uninstall so you install from the bucket properly:"
-Write-Host " scoop uninstall $manifestName"
+Write-Host ""
+Write-Host "    scoop uninstall $manifestName"

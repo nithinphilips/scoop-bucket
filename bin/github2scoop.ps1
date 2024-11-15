@@ -36,21 +36,22 @@ When used along with -force, write the output to a new manifest file. The manife
 Helpful when testing.
 
 .EXAMPLE
-./bin/github2scoop.ps1 -assetfilter 'woodpecker-agent*' -name woodpecker-agent -bin "woodpecker-agent.exe" woodpecker-ci/woodpecker
+PS> ./bin/github2scoop.ps1 -assetfilter 'woodpecker-agent*' -name woodpecker-agent -bin "woodpecker-agent.exe" woodpecker-ci/woodpecker
 
 This repo has multiple project assets. Only include assets that start with 'woodpecker-agent'
 
 Also override the manifest name and set the bin file name.
 .EXAMPLE
-./bin/github2scoop.ps1 -Bin yamlfmt.exe google/yamlfmt
+PS> ./bin/github2scoop.ps1 -Bin yamlfmt.exe google/yamlfmt
 
 Create a manifest and set a bin value
 .EXAMPLE
-./bin/github2scoop.ps1 vi/websocat
+PS> ./bin/github2scoop.ps1 vi/websocat
 
-Create a manifest. Bin value will be "<fill-it-in>"
+Create a manifest.
 #>
 
+[CmdletBinding()]
 param(
     [Parameter(Mandatory=$true)]
     [String]$repo,
@@ -155,7 +156,7 @@ ForEach($release in $githubRelease.assets){
 
     if($assetFilter) {
          if (!($release.name -ilike $assetFilter)) {
-            Write-Host "Skip $($release.url) because $assetFilter did not match"
+            Write-Verbose "Skip $($release.url) because $assetFilter did not match"
             continue
          }
     }
@@ -209,9 +210,8 @@ ForEach($release in $githubRelease.assets){
     $scoopManifest["autoupdate"]["architecture"][$arch] = @{
         "url" = $release.url.Replace($version, "`$version");
     };
+
     $index = $index + 1
-
-
 }
 
 #ConvertTo-Json $scoopManifest | Write-Host
@@ -237,6 +237,10 @@ Write-Host "For more details, see https://github.com/ScoopInstaller/Scoop/wiki/A
 $fullManifestPath = (Resolve-Path $manifestFile)
 
 Write-Host "Test installation by running:"
-Write-Host " scoop install $fullManifestPath"
+Write-Host ""
+Write-Host "    scoop install '$fullManifestPath'"
+Write-Host ""
 Write-Host "Then uninstall so you install from the bucket properly:"
-Write-Host " scoop uninstall $manifestName"
+Write-Host ""
+Write-Host "    scoop uninstall $manifestName"
+
