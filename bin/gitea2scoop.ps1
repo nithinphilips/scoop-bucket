@@ -10,6 +10,7 @@ Requirements:
    gh: scoop install main/gh
    jq: scoop install main/jq
    PowerShell 7.x: winget install Microsoft.Powershell
+   PSCompression: Install-Module PSCompression -Scope CurrentUser
 
 .PARAMETER repo
 A GitHub Repository name. Use <owner>/<repo> format.
@@ -62,8 +63,16 @@ param(
 )
 
 
+if ($giteaUrl.EndsWith("/")) {
+    $giteaUrl = $giteaUrl.SubString(0, $giteaUrl.Length - 1)
+}
+
 $githubRepo=ConvertFrom-Json $((Invoke-WebRequest "$giteaUrl/api/v1/repos/$repo").Content)
 
+$scoopHome = scoop prefix scoop
+
+. "$scoopHome\lib\core.ps1"
+. "$scoopHome\lib\install.ps1"
 
 if (!$name) {
     $manifestName = $githubRepo.name
@@ -124,7 +133,7 @@ $scoopManifest= [ordered]@{
     "checkver" = [ordered]@{
         "url" = "$giteaUrl/api/v1/repos/$repo/releases/latest";
         "jsonpath" = "$.tag_name";
-        "regex" = "v([\\d.]+)";
+        "regex" = "v([\d.]+)"; # The one slash will become two in JSON.
     };
     "autoupdate" = [ordered]@{
         "architecture" = [ordered]@{
@@ -164,7 +173,8 @@ ForEach($release in $githubRelease.assets){
         -or ($release.browser_download_url -ilike "*.txt") `
         -or ($release.browser_download_url -ilike "*.rpm") `
         -or ($release.browser_download_url -ilike "*.deb") `
-        -or ($release.browser_download_url -ilike "*.sha256")
+        -or ($release.browser_download_url -ilike "*.sha256") `
+	-or ($release.browser_download_url -ilike "*.vsix")
     ) {
         Write-Host "Skip $($release.browser_download_url)"
         continue
@@ -183,9 +193,22 @@ ForEach($release in $githubRelease.assets){
         $arch = "$index-$arch"
     }
 
+    Invoke-CachedDownload -app $manifestName -version $version -url $release.browser_download_url -to $null -cookies $null -use_cache:$true
+    $tempFile = cache_path $manifestName $version $release.browser_download_url
+    $hash = (Get-FileHash -Path $tempFile -Algorithm "SHA256").Hash.ToLower()
+
+    # TODO: Do different things for .zip, .exe, .tar, .tar.gz and unknown
+    $zipEntries = Get-ZipEntry $tempFile -Include *.exe
+    if ($zipEntries) {
+        $exeName = $zipEntries[0].Name
+        if (!$scoopManifest["bin"]) {
+            # Stray comma forces the nested array
+            $scoopManifest["bin"] = @(, @( $exeName, $manifestName ) )
+        }
+    }
     $scoopManifest["architecture"][$arch] = @{
         "url" = $release.browser_download_url;
-        "hash" = "<not-set>";
+        "hash" = $hash;
     };
 
     $scoopManifest["autoupdate"]["architecture"][$arch] = @{
@@ -200,25 +223,13 @@ $manifestJson = ConvertTo-Json -Depth 10 $scoopManifest
 $manifestJson | Out-File $manifestFile
 Write-Host "Manifest written to $manifestFile"
 
-Write-Host "Populating hashes:"
-& ./bin/checkhashes.ps1 -App $manifestName -Update
+#Write-Host "Populating hashes:"
+#& ./bin/checkhashes.ps1 -App $manifestName
 
 Get-Content $manifestFile | jq
 
 Write-Host "Edit $manifestFile and populate the following poperties:"
-Write-Host " * bin"
-Write-Host ""
-Write-Host "   If the app download just an exe named anything and you want the command you want is 'app':"
-Write-Host "       `"bin`": `"app`""
-Write-Host "   If the app download is an exe named 'app-windows-amd64.exe' and the command you want is 'app':"
-Write-Host "       `"bin`": [ [`"app-windows-amd64.exe`", `"app`"] ]"
-Write-Host "   If the app download just an archive with the exe in the root of the zip:"
-Write-Host "       `"bin`": `"app.exe`""
-Write-Host "   If the app download is an archive and the binary is in a sub directory 'app/app-windows-amd64.exe' and the command you want is 'app':"
-Write-Host "       `"bin`": [ [`"app/app-windows-amd64.exe`", `"app`"] ]"
-Write-Host ""
-Write-Host "   The second part should never have the .exe extension"
-Write-Host ""
+Write-Host " * bin: check if this was detected correctly"
 Write-Host " * if the architecture detection was not correct, edit the `"architecture`" property and run"
 Write-Host ""
 Write-Host "      pwsh ../bin/checkhashes.ps1 -App $manifestName -Update"
