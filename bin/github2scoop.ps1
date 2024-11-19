@@ -163,12 +163,18 @@ ForEach($release in $githubRelease.assets){
 
     if (($release.url -imatch "linux") `
         -or ($release.url -imatch "freebsd") `
+        -or ($release.url -imatch "netbsd") `
+        -or ($release.url -imatch "openbsd") `
         -or ($release.url -imatch "darwin") `
         -or ($release.url -imatch "apple") `
         -or ($release.url -ilike "*.txt") `
+        -or ($release.url -ilike "*.json") `
         -or ($release.url -ilike "*.rpm") `
         -or ($release.url -ilike "*.deb") `
         -or ($release.url -ilike "*.sha256") `
+        -or ($release.url -ilike "*.pem") `
+        -or ($release.url -ilike "*.sig") `
+        -or ($release.url -ilike "*.apk") `
         -or ($release.url -ilike "*.vsix")
     ) {
         Write-Host "Skip $($release.url)"
