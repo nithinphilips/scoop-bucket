@@ -1,0 +1,41 @@
+{
+  "version": "0.1.0",
+  "description": "Simple and lightweight tray icon that shows the current workspace for the Komorebi window manager.",
+  "homepage": "https://github.com/joshprk/komotray",
+  "license": "MIT license",
+  "architecture": {
+    "64bit": {
+      "hash": "290b5346fff9bcc4daf0be4d51392562e0374274ac5542f0bf5ed635df806ee8",
+      "url": "https://github.com/joshprk/komotray/releases/download/v0.1.0/komotray.zip"
+    }
+  },
+  "pre_install": "Stop-Process -ProcessName komotray *> $null ; return 0",
+  "pre_uninstall": "Stop-Process -ProcessName komotray *> $null ; return 0",
+  "post_install": "Copy-Item -Path \"$($env:AppData)\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\Komotray.lnk\" \"$($env:AppData)\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Komotray.lnk\"; Write-Output \"Adding komotray to your startup folder\"",
+  "post_uninstall": "Remove-Item -Force -Path \"$($env:AppData)\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Komotray.lnk\"",
+  "bin": [
+    [
+      "komotray.exe",
+      "komotray"
+    ]
+  ],
+  "shortcuts": [
+    [
+        "komotray.exe",
+        "Komotray"
+    ]
+  ],
+  "persist": [
+    "assets"
+  ],
+  "checkver": {
+    "github": "https://github.com/joshprk/komotray"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/joshprk/komotray/releases/download/v$version/komotray.zip"
+      }
+    }
+  }
+}
