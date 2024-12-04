@@ -1,28 +1,28 @@
 {
-  "version": "0.20.2",
-  "description": "Fast SQL formatter/linter",
-  "homepage": "https://playground.quary.dev/?secondary=Format",
-  "license": "MIT license",
-  "architecture": {
-    "64bit": {
-      "hash": "4cecaf1c3d0dc1fce66a01fd4ffa7466a0b8f1bb489b15aa73e20554342e495a",
-      "url": "https://github.com/quarylabs/sqruff/releases/download/v0.20.2/sqruff-windows-x86_64.zip"
-    }
-  },
-  "bin": [
-    [
-      "sqruff.exe",
-      "sqruff"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/quarylabs/sqruff"
-  },
-  "autoupdate": {
+    "version": "0.21.8",
+    "description": "Fast SQL formatter/linter",
+    "homepage": "https://playground.quary.dev/?secondary=Format",
+    "license": "MIT license",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/quarylabs/sqruff/releases/download/v$version/sqruff-windows-x86_64.zip"
-      }
+        "64bit": {
+            "hash": "10ad8a6c4b5fab54c99d2de3c1d7f7afebba93323978d1268801843b9e90b8ce",
+            "url": "https://github.com/quarylabs/sqruff/releases/download/v0.21.8/sqruff-windows-x86_64.zip"
+        }
+    },
+    "bin": [
+        [
+            "sqruff.exe",
+            "sqruff"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/quarylabs/sqruff"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/quarylabs/sqruff/releases/download/v$version/sqruff-windows-x86_64.zip"
+            }
+        }
     }
-  }
 }
