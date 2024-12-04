@@ -36,21 +36,22 @@ When used along with -force, write the output to a new manifest file. The manife
 Helpful when testing.
 
 .EXAMPLE
-./bin/github2scoop.ps1 -assetfilter 'woodpecker-agent*' -name woodpecker-agent -bin "woodpecker-agent.exe" woodpecker-ci/woodpecker
+PS> ./bin/gitea2scoop.ps1 -assetfilter 'woodpecker-agent*' -name woodpecker-agent -bin "woodpecker-agent.exe" woodpecker-ci/woodpecker
 
 This repo has multiple project assets. Only include assets that start with 'woodpecker-agent'
 
 Also override the manifest name and set the bin file name.
 .EXAMPLE
-./bin/github2scoop.ps1 -Bin yamlfmt.exe google/yamlfmt
+PS> ./bin/gitea2scoop.ps1 -Bin yamlfmt.exe google/yamlfmt
 
 Create a manifest and set a bin value
 .EXAMPLE
-./bin/github2scoop.ps1 vi/websocat
+PS> ./bin/gitea2scoop.ps1 vi/websocat
 
 Create a manifest. Bin value will be "<fill-it-in>"
 #>
 
+[CmdletBinding()]
 param(
     [Parameter(Mandatory=$true)]
     [String]$repo,
@@ -116,7 +117,7 @@ if (!$binProperty) {
     if($bin){
         $binProperty = $bin
     } else {
-        $binProperty = "<fill-it-in>"
+        $binProperty = $null
     }
 }
 
@@ -126,7 +127,7 @@ $scoopManifest= [ordered]@{
     "version" = $version;
     "description" = $githubRepo.description;
     "homepage" = $homePageUrl;
-    "license" = "MIT license";
+    "license" = "MIT";
     "architecture" = [ordered]@{
     };
     "bin" = $binProperty;
@@ -161,26 +162,32 @@ ForEach($release in $githubRelease.assets){
 
     if($assetFilter) {
          if (!($release.name -ilike $assetFilter)) {
-            Write-Host "Skip $($release.browser_download_url) because $assetFilter did not match"
+            Write-Verbose "Skip $($release.browser_download_url) because $assetFilter did not match"
             continue
          }
     }
 
     if (($release.browser_download_url -imatch "linux") `
         -or ($release.browser_download_url -imatch "freebsd") `
+        -or ($release.browser_download_url -imatch "netbsd") `
+        -or ($release.browser_download_url -imatch "openbsd") `
         -or ($release.browser_download_url -imatch "darwin") `
         -or ($release.browser_download_url -imatch "apple") `
         -or ($release.browser_download_url -ilike "*.txt") `
+        -or ($release.browser_download_url -ilike "*.json") `
         -or ($release.browser_download_url -ilike "*.rpm") `
         -or ($release.browser_download_url -ilike "*.deb") `
         -or ($release.browser_download_url -ilike "*.sha256") `
+        -or ($release.browser_download_url -ilike "*.pem") `
+        -or ($release.browser_download_url -ilike "*.sig") `
+        -or ($release.browser_download_url -ilike "*.apk") `
         -or ($release.browser_download_url -ilike "*.vsix")
     ) {
         Write-Host "Skip $($release.browser_download_url)"
         continue
     }
 
-    if (($release.browser_download_url -imatch "amd64") -or ($release.browser_download_url -imatch "x86_64")) {
+    if (($release.browser_download_url -imatch "amd64") -or ($release.browser_download_url -imatch "x86_64") -or ($release.browser_download_url -imatch "x64")) {
         $arch = "64bit"
     } elseif (($release.browser_download_url -imatch "arm64") -or ($release.browser_download_url -imatch "aarch64")) {
         $arch = "arm64"
@@ -198,14 +205,30 @@ ForEach($release in $githubRelease.assets){
     $hash = (Get-FileHash -Path $tempFile -Algorithm "SHA256").Hash.ToLower()
 
     # TODO: Do different things for .zip, .exe, .tar, .tar.gz and unknown
-    $zipEntries = Get-ZipEntry $tempFile -Include *.exe
-    if ($zipEntries) {
-        $exeName = $zipEntries[0].Name
-        if (!$scoopManifest["bin"]) {
-            # Stray comma forces the nested array
-            $scoopManifest["bin"] = @(, @( $exeName, $manifestName ) )
+    if ($release.browser_download_url -imatch '.zip$') {
+        $zipEntries = Get-ZipEntry $tempFile -Include *.exe
+        if ($zipEntries) {
+            $exeName = $zipEntries[0].RelativePath
+            if ($exeName -and !$scoopManifest["bin"]) {
+                # Stray comma forces the nested array
+                $scoopManifest["bin"] = @(, @( $exeName, $manifestName ) )
+
+                # TODO: Do this for $scoopManifest["bin"] entries, not just when we know the exe name
+                if ($exeName.contains($version)) {
+                    $exeVarName = $exeName.replace($version, '$version')
+                    $scoopManifest["autoupdate"]["bin"] = @(, @( $exeVarName, $manifestName ) )
+                }
+            }
         }
+    } elseif ($release.browser_download_url -imatch '.exe$') {
+        $exeName = Split-Path -Leaf $release.browser_download_url
+        $scoopManifest["bin"] = @(, @( $exeName, $manifestName ) )
+        $exeVarName = $exeName.replace($version, '$version')
+        $scoopManifest["autoupdate"]["bin"] = @(, @( $exeVarName, $manifestName ) )
+    } else {
+        Write-Warning "The file format is not supported and cannot set the bin property automatically."
     }
+
     $scoopManifest["architecture"][$arch] = @{
         "url" = $release.browser_download_url;
         "hash" = $hash;

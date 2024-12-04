@@ -122,7 +122,7 @@ $scoopManifest= [ordered]@{
     "version" = $version;
     "description" = $githubRepo.description;
     "homepage" = $homePageUrl;
-    "license" = "MIT license";
+    "license" = "MIT";
     "architecture" = [ordered]@{
     };
     "bin" = $binProperty;
@@ -181,7 +181,7 @@ ForEach($release in $githubRelease.assets){
         continue
     }
 
-    if (($release.url -imatch "amd64") -or ($release.url -imatch "x86_64")) {
+    if (($release.url -imatch "amd64") -or ($release.url -imatch "x86_64") -or ($release.browser_download_url -imatch "x64")) {
         $arch = "64bit"
     } elseif (($release.url -imatch "arm64") -or ($release.url -imatch "aarch64")) {
         $arch = "arm64"
@@ -199,13 +199,28 @@ ForEach($release in $githubRelease.assets){
     $hash = (Get-FileHash -Path $tempFile -Algorithm "SHA256").Hash.ToLower()
 
     # TODO: Do different things for .zip, .exe, .tar, .tar.gz and unknown
-    $zipEntries = Get-ZipEntry $tempFile -Include *.exe
-    if ($zipEntries) {
-        $exeName = $zipEntries[0].Name
-        if (!$scoopManifest["bin"]) {
-            # Stray comma forces the nested array
-            $scoopManifest["bin"] = @(, @( $exeName, $manifestName ) )
+    if ($release.url -imatch '.zip$') {
+        $zipEntries = Get-ZipEntry $tempFile -Include *.exe
+        if ($zipEntries) {
+            $exeName = $zipEntries[0].RelativePath
+            if ($exeName -and !$scoopManifest["bin"]) {
+                # Stray comma forces the nested array
+                $scoopManifest["bin"] = @(, @( $exeName, $manifestName ) )
+
+                # TODO: Do this for $scoopManifest["bin"] entries, not just when we know the exe name
+                if ($exeName.contains($version)) {
+                    $exeVarName = $exeName.replace($version, '$version')
+                    $scoopManifest["autoupdate"]["bin"] = @(, @( $exeVarName, $manifestName ) )
+                }
+            }
         }
+    } elseif ($release.url -imatch '.exe$') {
+        $exeName = Split-Path -Leaf $release.url
+        $scoopManifest["bin"] = @(, @( $exeName, $manifestName ) )
+        $exeVarName = $exeName.replace($version, '$version')
+        $scoopManifest["autoupdate"]["bin"] = @(, @( $exeVarName, $manifestName ) )
+    } else {
+        Write-Warning "The file format is not supported and cannot set the bin property automatically."
     }
 
     $scoopManifest["architecture"][$arch] = @{
