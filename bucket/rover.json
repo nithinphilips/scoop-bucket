@@ -1,0 +1,48 @@
+{
+  "version": "0.3.3",
+  "description": "Interactive Terraform visualization. State and configuration explorer.",
+  "homepage": "https://github.com/im2nguyen/rover",
+  "license": "MIT",
+  "architecture": {
+    "32bit": {
+      "hash": "fb541e3b174d9ef13d4623f630a0b8d4d509a13318add307702a2d60ba3ab848",
+      "url": "https://github.com/im2nguyen/rover/releases/download/v0.3.3/rover_0.3.3_windows_386.zip"
+    },
+    "64bit": {
+      "hash": "4ebae0a6a64a7536dcb1c70af6d2ac9f9eb64dfcd489e567392b67c58a69fcc1",
+      "url": "https://github.com/im2nguyen/rover/releases/download/v0.3.3/rover_0.3.3_windows_amd64.zip"
+    },
+    "arm64": {
+      "hash": "7e5a6e4461c170e81098cf5411f84a57dd8ff923531797775d49f5749b187743",
+      "url": "https://github.com/im2nguyen/rover/releases/download/v0.3.3/rover_0.3.3_windows_arm64.zip"
+    }
+  },
+  "bin": [
+    [
+      "rover_v0.3.3.exe",
+      "rover"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/im2nguyen/rover"
+  },
+  "autoupdate": {
+    "architecture": {
+      "32bit": {
+        "url": "https://github.com/im2nguyen/rover/releases/download/v$version/rover_$version_windows_386.zip"
+      },
+      "64bit": {
+        "url": "https://github.com/im2nguyen/rover/releases/download/v$version/rover_$version_windows_amd64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/im2nguyen/rover/releases/download/v$version/rover_$version_windows_arm64.zip"
+      }
+    },
+    "bin": [
+      [
+        "rover_v$version.exe",
+        "rover"
+      ]
+    ]
+  }
+}
