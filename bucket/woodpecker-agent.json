@@ -1,12 +1,12 @@
 {
-    "version": "2.8.3",
+    "version": "3.0.0",
     "description": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.",
     "homepage": "https://woodpecker-ci.org",
     "license": "MIT license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/woodpecker-ci/woodpecker/releases/download/v2.8.3/woodpecker-agent_windows_amd64.zip",
-            "hash": "9a51e2bfe8287823d7633716f138aac2a2e9b03b4bc706a4af1834dbce38ca85"
+            "url": "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.0.0/woodpecker-agent_windows_amd64.zip",
+            "hash": "e5cdeaf8a9e789d17e701bf4974b63e92aa6cb457795cdf71111f2357a0f9285"
         }
     },
     "bin": "woodpecker-agent.exe",
