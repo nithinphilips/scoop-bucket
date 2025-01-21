@@ -1,12 +1,12 @@
 {
-    "version": "0.21.9",
+    "version": "0.24.2",
     "description": "Fast SQL formatter/linter",
     "homepage": "https://playground.quary.dev/?secondary=Format",
     "license": "MIT license",
     "architecture": {
         "64bit": {
-            "hash": "2cc4f8243079d7191bd23fe2fa80d04843e99f8518d8ca8034f6d482d9360a68",
-            "url": "https://github.com/quarylabs/sqruff/releases/download/v0.21.9/sqruff-windows-x86_64.zip"
+            "hash": "0da114c304f59629e81478365105e19310bbef8a0d9d0e0abc16228d83219ccf",
+            "url": "https://github.com/quarylabs/sqruff/releases/download/v0.24.2/sqruff-windows-x86_64.zip"
         }
     },
     "bin": [
