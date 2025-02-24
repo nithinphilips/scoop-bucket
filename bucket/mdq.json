@@ -1,0 +1,28 @@
+{
+  "version": "0.3.0",
+  "description": "like jq but for Markdown: find specific elements in a md doc",
+  "homepage": "https://github.com/yshavit/mdq",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/yshavit/mdq/releases/download/v0.3.0/mdq-windows.zip",
+      "hash": "105a91d1bfab3dded8341114d6e09482e80e95816a929b67286cdd1796e5e73c"
+    }
+  },
+  "bin": [
+    [
+      "mdq.exe",
+      "mdq"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/yshavit/mdq"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/yshavit/mdq/releases/download/v$version/mdq-windows.zip"
+      }
+    }
+  }
+}
