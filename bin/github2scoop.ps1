@@ -175,7 +175,9 @@ ForEach($release in $githubRelease.assets){
         -or ($release.url -ilike "*.pem") `
         -or ($release.url -ilike "*.sig") `
         -or ($release.url -ilike "*.apk") `
-        -or ($release.url -ilike "*.vsix")
+        -or ($release.url -ilike "*.vsix") `
+        -or ($release.url -ilike "*source.tar*") `
+        -or ($release.url -ilike "*source.zip*")
     ) {
         Write-Host "Skip $($release.url)"
         continue
