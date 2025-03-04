@@ -11,16 +11,29 @@ Nithin's personal [Scoop](https://scoop.sh) bucket.
 * [cb_thunderlink](https://github.com/CamielBouchier/cb_thunderlink) - CB Thunderlink allows you to create direct link to thunderbird emails
 * [cv4pve-cli](https://github.com/Corsinvest/cv4pve-cli) - Cli for Proxmox VE (Command Line Interfaces)
 * [dyff](https://github.com/homeport/dyff) - A diff tool for YAML files, and sometimes JSON
+* [excalidraw-converter](https://github.com/sindrel/excalidraw-converter) - A command line tool for porting Excalidraw diagrams to Gliffy and draw.io.
 * [filebrowser-upload](https://github.com/spotdemo4/filebrowser-upload) - CLI utility for uploading to filebrowser
 * [fname](https://github.com/Splode/fname) - Find and replace text in source files
 * [gfold](https://crates.io/crates/gfold) - CLI tool to help keep track of your Git repositories, written in Rust
+* [komotray](https://github.com/joshprk/komotray) - Simple and lightweight tray icon that shows the current workspace for the Komorebi window manager.
+* [kroki-cli](https://github.com/yuzutech/kroki-cli) - A Kroki CLI
+* [mdq](https://github.com/yshavit/mdq) - like jq but for Markdown: find specific elements in a md doc
+* [mergiraf](https://mergiraf.org/) - A syntax-aware git merge driver for a growing collection of programming languages and file formats.
 * [odel](https://github.com/nithinphilips/odel) - A tool to upload file to TRIRIGA using Data Integrator.
+* [podlet](https://crates.io/crates/podlet) - Generate Podman Quadlet files from a Podman command, compose file, or existing object
 * [qsv](https://github.com/jqnatividad/qsv) - qsv is a command line program for indexing, slicing, analyzing, splitting, enriching, validating & joining CSV files.
+* [rover](https://github.com/im2nguyen/rover) - Interactive Terraform visualization. State and configuration explorer.
+* [run-hidden](https://github.com/stax76/run-hidden) - run-hidden runs Windows console apps like PowerShell with hidden console window.
 * [ruplacer](https://github.com/your-tools/ruplacer) - Find and replace text in source files
 * [sauce](https://github.com/DanCardin/sauce) - A tool to help manage context/project specific shell-things like environment variables.
+* [sequin](https://github.com/charmbracelet/sequin) - Human-readable ANSI sequences
+* [sqruff](https://playground.quary.dev/?secondary=Format) - Fast SQL formatter/linter
 * [tidy-viewer](https://github.com/alexhallam/tv) - Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.
+* [vcvarsall](https://github.com/nathan818fr/vcvars-bash) - Bash script to execute vcvarsall.bat and get environment variables for use in Bash
 * [websocat](https://github.com/vi/websocat) - Command-line client for WebSockets, like netcat (or curl) for ws:// with advanced socat-like functions
 * [woodpecker-agent](https://woodpecker-ci.org) - Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.
+* [woodpecker-cli](https://woodpecker-ci.org) - Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.
+* [woodpecker-server](https://woodpecker-ci.org) - Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.
 * [yaml-diff](https://github.com/sters/yaml-diff) - Make a diff between 2 yaml files.
 * [yamlfmt](https://github.com/google/yamlfmt) - An extensible command line tool or library to format yaml files.
 
