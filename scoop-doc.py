@@ -1,31 +1,18 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 # PYTHON_ARGCOMPLETE_OK
-
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#   "argh",
+#   "argcomplete",
+#   "prompt_toolkit"
+# ]
+# [tool.uv]
+# exclude-newer = "2025-02-24T00:00:00Z"
+# ///
+#
 #
 # Template for Python Scripts
-#
-# Features:
-#  * Command-line parsing
-#  * Python 3 Support
-#  * Bash auto completion
-#  * Logging
-#
-# Prerequisites:
-#   pip3 install argh argcomplete prompt_toolkit
-#
-# Bash Autocompletion:
-#
-#   1. Install bash-completion package
-#   2. Add to your .bashrc:
-#
-#         [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
-#               . /usr/share/bash-completion/bash_completion
-#
-#   4. In bash run:
-#
-#           activate-global-python-argcomplete
-#
-#   5. Restart your shell.
 #
 
 # Use of prompt toolkit is optional.
@@ -45,13 +32,14 @@ import csv
 from argh import ArghParser, completion, set_default_command, arg
 from argcomplete.completers import ChoicesCompleter,  FilesCompleter
 
+script_dir = os.path.dirname(os.path.realpath(__file__))
+
 if USE_PROMPT_TOOLKIT:
     from prompt_toolkit import HTML, print_formatted_text
     printf = print_formatted_text
 else:
     printf = print
     HTML = lambda x: x
-
 
 regex = re.compile(r"^(?P<prefix>[\s]*)scoop install (?P<package>[^\s]*)")
 
@@ -88,7 +76,10 @@ def process():
                     app = parts[1]
 
                 logging.debug(f"Bucket: {bucket}, App: {app}")
-                app_json = os.path.join("/cygdrive/c/Users/Nithin/scoop/buckets", bucket, "bucket", f"{app}.json")
+                user_home = os.environ.get("USERPROFILE")
+                app_json = os.path.join(user_home, "scoop", "buckets", bucket, "bucket", f"{app}.json")
+
+                logging.debug(f"Look for: {app_json}")
 
                 if os.path.exists(app_json):
                     with open(app_json) as f:
@@ -100,7 +91,7 @@ def process():
                         #sys.stdout.write(f"{package},{bucket},{app_desc},{app_url}\n")
                         writer.writerow([package,bucket,app_desc,app_url])
                 else:
-                    logging.debug(f"NOMATCH: {line}")
+                    logging.debug(f"NOFILE: {line}: {app_json}")
                     #sys.stdout.write(line)
 
             else:

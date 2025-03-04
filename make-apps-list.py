@@ -1,17 +1,16 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 # PYTHON_ARGCOMPLETE_OK
-
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#   "argh",
+#   "argcomplete",
+#   "prompt_toolkit"
+# ]
+# [tool.uv]
+# exclude-newer = "2025-02-24T00:00:00Z"
+# ///
 #
-# Template for Python Scripts
-#
-# Features:
-#  * Command-line parsing
-#  * Python 3 Support
-#  * Bash auto completion
-#  * Logging
-#
-# Prerequisites:
-#   pip3 install argh argcomplete prompt_toolkit
 #
 # Bash Autocompletion:
 #
@@ -45,6 +44,8 @@ import glob
 
 from argh import ArghParser, completion, set_default_command, arg
 from argcomplete.completers import ChoicesCompleter,  FilesCompleter
+
+script_dir = os.path.dirname(os.path.realpath(__file__))
 
 if USE_PROMPT_TOOLKIT:
     from prompt_toolkit import HTML, print_formatted_text
