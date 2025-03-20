@@ -9,8 +9,10 @@ Nithin's personal [Scoop](https://scoop.sh) bucket.
 * [act_runner](https://gitea.com/gitea/act_runner) - A runner for Gitea based on act.
 * [birt](https://eclipse-birt.github.io/birt-website) - With BIRT you can create data visualizations, dashboards and reports
 * [cb_thunderlink](https://github.com/CamielBouchier/cb_thunderlink) - CB Thunderlink allows you to create direct link to thunderbird emails
+* [countryfetch](https://github.com/nik-rev/countryfetch) - A Command-line tool similar to Neofetch for obtaining information about your country
 * [cv4pve-cli](https://github.com/Corsinvest/cv4pve-cli) - Cli for Proxmox VE (Command Line Interfaces)
 * [dyff](https://github.com/homeport/dyff) - A diff tool for YAML files, and sometimes JSON
+* [envfetch](https://github.com/ankddev/envfetch) - Lightweight cross-platform CLI tool for working with environment variables.
 * [excalidraw-converter](https://github.com/sindrel/excalidraw-converter) - A command line tool for porting Excalidraw diagrams to Gliffy and draw.io.
 * [filebrowser-upload](https://github.com/spotdemo4/filebrowser-upload) - CLI utility for uploading to filebrowser
 * [fname](https://github.com/Splode/fname) - Find and replace text in source files
