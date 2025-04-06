@@ -1,34 +1,34 @@
 {
-  "version": "2.0.0",
-  "description": "Lightweight cross-platform CLI tool for working with environment variables.",
-  "homepage": "https://github.com/ankddev/envfetch",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/ankddev/envfetch/releases/download/v2.0.0/envfetch-windows-amd64.zip",
-      "hash": "110f7e5afd9ad58be28b4b2beb564f2d2761a5ac0465711524f6d78005109bfe"
-    }
-  },
-  "bin": [
-    [
-      "envfetch.exe",
-      "envfetch"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/ankddev/envfetch"
-  },
-  "autoupdate": {
+    "version": "2.1.0",
+    "description": "Lightweight cross-platform CLI tool for working with environment variables.",
+    "homepage": "https://github.com/ankddev/envfetch",
+    "license": "MIT",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/ankddev/envfetch/releases/download/v$version/envfetch-windows-amd64.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/ankddev/envfetch/releases/download/v2.1.0/envfetch-windows-amd64.zip",
+            "hash": "1de2906d8cba88aae3b8d6b9e76aa365e9bc077867c428d8a26bdbe90c19c12e"
+        }
     },
     "bin": [
-      [
-        "envfetch.exe",
-        "envfetch"
-      ]
-    ]
-  }
+        [
+            "envfetch.exe",
+            "envfetch"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/ankddev/envfetch"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ankddev/envfetch/releases/download/v$version/envfetch-windows-amd64.zip"
+            }
+        },
+        "bin": [
+            [
+                "envfetch.exe",
+                "envfetch"
+            ]
+        ]
+    }
 }
