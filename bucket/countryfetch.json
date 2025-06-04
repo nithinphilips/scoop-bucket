@@ -1,12 +1,12 @@
 {
-    "version": "0.1.9",
+    "version": "0.2.0",
     "description": "A Command-line tool similar to Neofetch for obtaining information about your country",
     "homepage": "https://github.com/nik-rev/countryfetch",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nik-rev/countryfetch/releases/download/v0.1.9/countryfetch-x86_64-pc-windows-msvc.zip",
-            "hash": "812c60bd59b9d051c6609f430c97d732806e16240638a5d63e45ca003341132a"
+            "url": "https://github.com/nik-rev/countryfetch/releases/download/v0.2.0/countryfetch-x86_64-pc-windows-msvc.zip",
+            "hash": "b95dc92e77b316a9b22521e5e1b1c703ea855a6de23eb0763ea32e5d7f56fefc"
         }
     },
     "bin": [
