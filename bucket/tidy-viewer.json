@@ -7,11 +7,11 @@
     "hash": "afaad9e7bb169b1e4439f4521506614af963a1ed22bdae439ab08f3e7d0e3030",
     "bin": [
         [
-            "tidy-viewer-1.8.93-x86_64-pc-windows-msvc/tidy-viewer.exe",
+            "tidy-viewer.exe",
             "tidy-viewer"
         ],
         [
-            "tidy-viewer-1.8.93-x86_64-pc-windows-msvc/tidy-viewer.exe",
+            "tidy-viewer.exe",
             "tv"
         ]
     ],
@@ -20,11 +20,11 @@
         "url": "https://github.com/alexhallam/tv/releases/download/$version/tidy-viewer-$version-x86_64-pc-windows-msvc.zip",
         "bin": [
             [
-                "tidy-viewer-$version-x86_64-pc-windows-msvc/tidy-viewer.exe",
+                "tidy-viewer.exe",
                 "tidy-viewer"
             ],
             [
-                "tidy-viewer-$version-x86_64-pc-windows-msvc/tidy-viewer.exe",
+                "tidy-viewer.exe",
                 "tv"
             ]
         ]
