@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.10.0/woodpecker-cli_windows_amd64.zip",
-            "hash": "f1ced7620a39e6e03f65cb1d5802af7348ca9b5f4ced436dc02c3d2c5b42c9f6"
+            "hash": "b01d11a05326dce5ba18a2007e21ac321aca1560c7db86ab3195d4c8af76ebf0"
         }
     },
     "bin": "woodpecker-cli.exe",
