@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/woodpecker-ci/woodpecker/releases/download/v3.10.0/woodpecker-agent_windows_amd64.zip",
-            "hash": "a3c40037e086acefddaf0ccae9ab3b61e30f2524da645a38337dbe982e8f04eb"
+            "hash": "63db5391216f7ec95cd3b83cea6db72728f84772854db9b6b068b0edd3554325"
         }
     },
     "bin": "woodpecker-agent.exe",
