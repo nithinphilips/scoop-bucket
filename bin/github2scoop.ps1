@@ -68,6 +68,7 @@ $githubRepo=ConvertFrom-Json $(gh repo view --json name,description,url,homepage
 $scoopHome = scoop prefix scoop
 
 . "$scoopHome\lib\core.ps1"
+. "$scoopHome\lib\download.ps1"
 . "$scoopHome\lib\install.ps1"
 
 if (!$name) {
