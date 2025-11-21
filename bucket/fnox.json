@@ -1,16 +1,16 @@
 {
-    "version": "1.5.2",
+    "version": "1.6.0",
     "description": "encrypted/remote secret manager",
     "homepage": "https://fnox.jdx.dev",
     "license": "MIT",
     "architecture": {
         "arm64": {
-            "hash": "3d2dab7743257b134b0343fdc9aee39475f8a9f276ea7fc204500635d17a1bcf",
-            "url": "https://github.com/jdx/fnox/releases/download/v1.5.2/fnox-aarch64-pc-windows-msvc.zip"
+            "hash": "dfd3293898dcd61a909b55723875d4cb3be2b26ce5d047138f29ca4f877fc248",
+            "url": "https://github.com/jdx/fnox/releases/download/v1.6.0/fnox-aarch64-pc-windows-msvc.zip"
         },
         "64bit": {
-            "hash": "80c9e343b8db65e3e54373aa70ac8ce25eac0d3defa37c6bdac103051a29c2e8",
-            "url": "https://github.com/jdx/fnox/releases/download/v1.5.2/fnox-x86_64-pc-windows-msvc.zip"
+            "hash": "61e83f86c2a60012f0552f6d5e3e9894410469f3a1e0c85e4cd660c05bcd1c14",
+            "url": "https://github.com/jdx/fnox/releases/download/v1.6.0/fnox-x86_64-pc-windows-msvc.zip"
         }
     },
     "bin": [
