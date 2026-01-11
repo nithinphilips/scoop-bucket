@@ -1,16 +1,16 @@
 {
-    "version": "0.6.9",
+    "version": "0.7.0",
     "description": "The API client that lives in your terminal (and your git repo).",
     "homepage": "https://yapi.run",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "hash": "05e0fd0376fe932b275ac8940d6e52c70c81c2b4ab0c9766dbe2c12d23c130d2",
-            "url": "https://github.com/jamierpond/yapi/releases/download/v0.6.9/yapi_windows_amd64.zip"
+            "hash": "913b036719c2e432caafc71bf877fdf33ea14609afe018da286845e303605294",
+            "url": "https://github.com/jamierpond/yapi/releases/download/v0.7.0/yapi_windows_amd64.zip"
         },
         "arm64": {
-            "hash": "6ced363041e771fb48df5e1c8f9a9e7680c1d985b94118ba21126a0cbe06c123",
-            "url": "https://github.com/jamierpond/yapi/releases/download/v0.6.9/yapi_windows_arm64.zip"
+            "hash": "dd03bd058d0d661a0292f329109ec28f528236b6658b9e4bbd99a957610fe3c8",
+            "url": "https://github.com/jamierpond/yapi/releases/download/v0.7.0/yapi_windows_arm64.zip"
         }
     },
     "bin": [
