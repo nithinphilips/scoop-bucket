@@ -1,28 +1,28 @@
 {
-  "version": "0.3.0",
-  "description": "Generate Podman Quadlet files from a Podman command, compose file, or existing object",
-  "homepage": "https://crates.io/crates/podlet",
-  "license": "MPL-2.0",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/containers/podlet/releases/download/v0.3.0/podlet-x86_64-pc-windows-msvc.zip",
-      "hash": "7ecd8dc1e0946de679e2b0e2df922cb4350a8055f7683446ddba17d6b2e9b1ba"
-    }
-  },
-  "bin": [
-    [
-      "podlet.exe",
-      "podlet"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/containers/podlet"
-  },
-  "autoupdate": {
+    "version": "0.3.1",
+    "description": "Generate Podman Quadlet files from a Podman command, compose file, or existing object",
+    "homepage": "https://crates.io/crates/podlet",
+    "license": "MPL-2.0",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/containers/podlet/releases/download/v$version/podlet-x86_64-pc-windows-msvc.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/containers/podlet/releases/download/v0.3.1/podlet-x86_64-pc-windows-msvc.zip",
+            "hash": "237f6bf7664c421712f3b622e6f78a2affb3d0fbea8bf5553eec377bd4429d9a"
+        }
+    },
+    "bin": [
+        [
+            "podlet.exe",
+            "podlet"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/containers/podlet"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/containers/podlet/releases/download/v$version/podlet-x86_64-pc-windows-msvc.zip"
+            }
+        }
     }
-  }
 }
