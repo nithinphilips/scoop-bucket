@@ -9,6 +9,7 @@ Nithin's personal [Scoop](https://scoop.sh) bucket.
 * [act_runner](https://gitea.com/gitea/act_runner) - A runner for Gitea based on act.
 * [birt](https://eclipse-birt.github.io/birt-website) - With BIRT you can create data visualizations, dashboards and reports
 * [cb_thunderlink](https://github.com/CamielBouchier/cb_thunderlink) - CB Thunderlink allows you to create direct link to thunderbird emails
+* [cilium-cli](https://cilium.io) - CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
 * [countryfetch](https://github.com/nik-rev/countryfetch) - A Command-line tool similar to Neofetch for obtaining information about your country
 * [cv4pve-cli](https://github.com/Corsinvest/cv4pve-cli) - Cli for Proxmox VE (Command Line Interfaces)
 * [dyff](https://github.com/homeport/dyff) - A diff tool for YAML files, and sometimes JSON
@@ -16,6 +17,7 @@ Nithin's personal [Scoop](https://scoop.sh) bucket.
 * [excalidraw-converter](https://github.com/sindrel/excalidraw-converter) - A command line tool for porting Excalidraw diagrams to Gliffy and draw.io.
 * [filebrowser-upload](https://github.com/spotdemo4/filebrowser-upload) - CLI utility for uploading to filebrowser
 * [fname](https://github.com/Splode/fname) - Find and replace text in source files
+* [fnox](https://fnox.jdx.dev) - encrypted/remote secret manager
 * [gfold](https://crates.io/crates/gfold) - CLI tool to help keep track of your Git repositories, written in Rust
 * [komotray](https://github.com/joshprk/komotray) - Simple and lightweight tray icon that shows the current workspace for the Komorebi window manager.
 * [kroki-cli](https://github.com/yuzutech/kroki-cli) - A Kroki CLI
@@ -33,11 +35,13 @@ Nithin's personal [Scoop](https://scoop.sh) bucket.
 * [tidy-viewer](https://github.com/alexhallam/tv) - Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.
 * [vcvarsall](https://github.com/nathan818fr/vcvars-bash) - Bash script to execute vcvarsall.bat and get environment variables for use in Bash
 * [websocat](https://github.com/vi/websocat) - Command-line client for WebSockets, like netcat (or curl) for ws:// with advanced socat-like functions
+* [WindowsSpyBlocker](https://crazymax.dev/WindowsSpyBlocker/) - Block spying and tracking on Windows
 * [woodpecker-agent](https://woodpecker-ci.org) - Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.
 * [woodpecker-cli](https://woodpecker-ci.org) - Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.
 * [woodpecker-server](https://woodpecker-ci.org) - Woodpecker is a simple, yet powerful CI/CD engine with great extensibility.
 * [yaml-diff](https://github.com/sters/yaml-diff) - Make a diff between 2 yaml files.
 * [yamlfmt](https://github.com/google/yamlfmt) - An extensible command line tool or library to format yaml files.
+* [yapi](https://yapi.run) - The API client that lives in your terminal (and your git repo).
 
 ## How do I install these manifests?
 
