@@ -1,17 +1,17 @@
 {
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "A runner for Gitea based on act.",
     "homepage": "https://gitea.com/gitea/act_runner",
     "license": "MIT license",
     "architecture": {
         "64bit": {
-            "url": "https://gitea.com/gitea/act_runner/releases/download/v0.3.1/act_runner-0.3.1-windows-amd64.exe",
-            "hash": "5b9d4570f8b73e5cdd8d83573fbc3d7eee018f94cd7077c0fc57403967a20adc"
+            "url": "https://gitea.com/gitea/act_runner/releases/download/v0.4.0/act_runner-0.4.0-windows-amd64.exe",
+            "hash": "a681991572f5fe6e33279cb412afe84484a3805c47f564f36488e5a6b2d36b9f"
         }
     },
     "bin": [
         [
-            "act_runner-0.3.1-windows-amd64.exe",
+            "act_runner-0.4.0-windows-amd64.exe",
             "act_runner"
         ]
     ],
