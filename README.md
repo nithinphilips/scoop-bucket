@@ -10,6 +10,7 @@ Nithin's personal [Scoop](https://scoop.sh) bucket.
 * [birt](https://eclipse-birt.github.io/birt-website) - With BIRT you can create data visualizations, dashboards and reports
 * [cb_thunderlink](https://github.com/CamielBouchier/cb_thunderlink) - CB Thunderlink allows you to create direct link to thunderbird emails
 * [cilium-cli](https://cilium.io) - CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
+* [coreutils](https://sourceforge.net/projects/mingw/) - A collection of GNU utilities such as bash, make, gawk and grep
 * [countryfetch](https://github.com/nik-rev/countryfetch) - A Command-line tool similar to Neofetch for obtaining information about your country
 * [cv4pve-cli](https://github.com/Corsinvest/cv4pve-cli) - Cli for Proxmox VE (Command Line Interfaces)
 * [dyff](https://github.com/homeport/dyff) - A diff tool for YAML files, and sometimes JSON
