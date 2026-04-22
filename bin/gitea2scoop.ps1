@@ -73,7 +73,9 @@ $githubRepo=ConvertFrom-Json $((Invoke-WebRequest "$giteaUrl/api/v1/repos/$repo"
 $scoopHome = scoop prefix scoop
 
 . "$scoopHome\lib\core.ps1"
+. "$scoopHome\lib\download.ps1"
 . "$scoopHome\lib\install.ps1"
+
 
 if (!$name) {
     $manifestName = $githubRepo.name
