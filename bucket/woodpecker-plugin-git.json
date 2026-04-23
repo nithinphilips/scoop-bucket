@@ -6,36 +6,48 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.0/windows-amd64_plugin-git.exe",
-      "hash": "c69c2dfac14419ef4173dcaef0e2e983c9f738bb10b1393c0da0cd74ed59adb2"
+      "hash": "c69c2dfac14419ef4173dcaef0e2e983c9f738bb10b1393c0da0cd74ed59adb2",
+      "bin": [
+          [
+          "windows-amd64_plugin-git.exe",
+          "plugin-git"
+          ]
+      ]
     },
     "arm64": {
       "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.0/windows-arm64_plugin-git.exe",
-      "hash": "a2b8b0deceba8c36ad4184c2d7e392c1d43ec1c23c1f1a5c06ed9f127ee00b46"
+      "hash": "a2b8b0deceba8c36ad4184c2d7e392c1d43ec1c23c1f1a5c06ed9f127ee00b46",
+      "bin": [
+          [
+          "windows-arm64_plugin-git.exe",
+          "plugin-git"
+          ]
+      ]
     }
   },
-  "bin": [
-    [
-      "windows-arm64_plugin-git.exe",
-      "plugin-git"
-    ]
-  ],
   "checkver": {
     "github": "https://github.com/woodpecker-ci/plugin-git"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-amd64_plugin-git.exe"
+        "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-amd64_plugin-git.exe",
+        "bin": [
+            [
+                "windows-amd64_plugin-git.exe",
+                "plugin-git"
+            ]
+        ]
       },
       "arm64": {
-        "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-arm64_plugin-git.exe"
+        "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-arm64_plugin-git.exe",
+        "bin": [
+            [
+                "windows-arm64_plugin-git.exe",
+                "plugin-git"
+            ]
+        ]
       }
-    },
-    "bin": [
-      [
-        "windows-arm64_plugin-git.exe",
-        "plugin-git"
-      ]
-    ]
+    }
   }
 }
