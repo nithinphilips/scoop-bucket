@@ -1,53 +1,53 @@
 {
-  "version": "2.9.0",
-  "description": "Woodpecker plugin for cloning Git repositories",
-  "homepage": "https://woodpecker-ci.org/plugins/git-clone",
-  "license": "Apache-2.0",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.0/windows-amd64_plugin-git.exe",
-      "hash": "c69c2dfac14419ef4173dcaef0e2e983c9f738bb10b1393c0da0cd74ed59adb2",
-      "bin": [
-          [
-          "windows-amd64_plugin-git.exe",
-          "plugin-git"
-          ]
-      ]
-    },
-    "arm64": {
-      "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.0/windows-arm64_plugin-git.exe",
-      "hash": "a2b8b0deceba8c36ad4184c2d7e392c1d43ec1c23c1f1a5c06ed9f127ee00b46",
-      "bin": [
-          [
-          "windows-arm64_plugin-git.exe",
-          "plugin-git"
-          ]
-      ]
-    }
-  },
-  "checkver": {
-    "github": "https://github.com/woodpecker-ci/plugin-git"
-  },
-  "autoupdate": {
+    "version": "2.9.1",
+    "description": "Woodpecker plugin for cloning Git repositories",
+    "homepage": "https://woodpecker-ci.org/plugins/git-clone",
+    "license": "Apache-2.0",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-amd64_plugin-git.exe",
-        "bin": [
-            [
-                "windows-amd64_plugin-git.exe",
-                "plugin-git"
+        "64bit": {
+            "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.1/windows-amd64_plugin-git.exe",
+            "hash": "1221800659162922dcf474c7a44f5c8b38e46b24727b8c669525dfb06e6be96d",
+            "bin": [
+                [
+                    "windows-amd64_plugin-git.exe",
+                    "plugin-git"
+                ]
             ]
-        ]
-      },
-      "arm64": {
-        "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-arm64_plugin-git.exe",
-        "bin": [
-            [
-                "windows-arm64_plugin-git.exe",
-                "plugin-git"
+        },
+        "arm64": {
+            "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.1/windows-arm64_plugin-git.exe",
+            "hash": "4d10764bab801c7900f76f7bf93b6ad33ee2000ea3b69f322f073a34995acfc4",
+            "bin": [
+                [
+                    "windows-arm64_plugin-git.exe",
+                    "plugin-git"
+                ]
             ]
-        ]
-      }
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/woodpecker-ci/plugin-git"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-amd64_plugin-git.exe",
+                "bin": [
+                    [
+                        "windows-amd64_plugin-git.exe",
+                        "plugin-git"
+                    ]
+                ]
+            },
+            "arm64": {
+                "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/$version/windows-arm64_plugin-git.exe",
+                "bin": [
+                    [
+                        "windows-arm64_plugin-git.exe",
+                        "plugin-git"
+                    ]
+                ]
+            }
+        }
     }
-  }
 }
