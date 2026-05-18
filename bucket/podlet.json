@@ -1,12 +1,12 @@
 {
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "Generate Podman Quadlet files from a Podman command, compose file, or existing object",
     "homepage": "https://crates.io/crates/podlet",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/containers/podlet/releases/download/v0.3.1/podlet-x86_64-pc-windows-msvc.zip",
-            "hash": "237f6bf7664c421712f3b622e6f78a2affb3d0fbea8bf5553eec377bd4429d9a"
+            "url": "https://github.com/containers/podlet/releases/download/v0.3.2/podlet-x86_64-pc-windows-msvc.zip",
+            "hash": "54505b2c9cf356e5a3cc00381225786fa864730ca87666453aa0e3b1ca983ae8"
         }
     },
     "bin": [
