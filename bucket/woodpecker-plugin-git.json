@@ -1,12 +1,12 @@
 {
-    "version": "2.9.2",
+    "version": "2.9.3",
     "description": "Woodpecker plugin for cloning Git repositories",
     "homepage": "https://woodpecker-ci.org/plugins/git-clone",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.2/windows-amd64_plugin-git.exe",
-            "hash": "3f4cff428531fb5ccd7134a5e868ffe2b2af0548ce4a77ee9635662791975ebe",
+            "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.3/windows-amd64_plugin-git.exe",
+            "hash": "81cd1f06a0d6b9bfc2aaa7dead5c4d71223327f36ce9b1d4a25e5bf56f32c42b",
             "bin": [
                 [
                     "windows-amd64_plugin-git.exe",
@@ -15,8 +15,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.2/windows-arm64_plugin-git.exe",
-            "hash": "8cef04ce71ffd1c1f6788ba4489a559fe6303ba3c152dc613ac3f3edbaab0b72",
+            "url": "https://github.com/woodpecker-ci/plugin-git/releases/download/2.9.3/windows-arm64_plugin-git.exe",
+            "hash": "19cf651d15afa207a808e453fa46a26b370cfb05f4f21dab157a1717adeadfe7",
             "bin": [
                 [
                     "windows-arm64_plugin-git.exe",
