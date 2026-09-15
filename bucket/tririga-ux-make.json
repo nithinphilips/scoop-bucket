@@ -1,25 +1,25 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Makefiles to build TRIRIGA UX apps",
   "homepage": "https://nithinphilips.com",
   "license": "MIT",
   "hash": "d4549e47871c999afedcef25c5687a6cf07d05e4e4a33de44209b888bd7d38bb",
-  "url": "https://tririga-shared-files-np.s3.amazonaws.com/tririga-ux-make-0.3.1.zip",
+  "url": "https://tririga-shared-files-np.s3.amazonaws.com/tririga-ux-make-0.3.2.zip",
   "bin": [
     [
-      "tririga-ux-scripts/init-ux-project",
+      "tririga-ux-make/init-ux-project",
       "init-ux-project"
     ],
     [
-      "tririga-ux-scripts/list-ux-views",
+      "tririga-ux-make/list-ux-views",
       "list-ux-views"
     ],
     [
-      "tririga-ux-scripts/pull-all-views",
+      "tririga-ux-make/pull-all-views",
       "pull-all-views"
     ],
     [
-      "tririga-ux-scripts/pull-ux-view",
+      "tririga-ux-make/pull-ux-view",
       "pull-ux-view"
     ]
   ]
