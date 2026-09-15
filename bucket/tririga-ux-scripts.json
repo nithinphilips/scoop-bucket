@@ -1,8 +1,14 @@
 {
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Scripts to help develop TRIRIGA UX apps",
   "homepage": "https://nithinphilips.com",
   "license": "MIT",
   "hash": "f37884b8d41823f7b0812c2487b60dd6ebe3cfde3d03e08bc2c83287bf2d078c",
-  "url": "https://tririga-shared-files-np.s3.amazonaws.com/tririga-ux-scripts-0.2.4.zip"
+  "url": "https://tririga-shared-files-np.s3.amazonaws.com/tririga-ux-scripts-0.2.5.zip",
+  "bin": [
+    "init-ux-project",
+    "list-ux-views",
+    "pull-all-views",
+    "pull-ux-view"
+  ]
 }
