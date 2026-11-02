@@ -1,9 +1,9 @@
 {
-    "version": "d9be4af161b35ebcf69880277d41cea1ced2d22c",
+    "version": "f33ce60b288aea3a3dc3890edce742cdb5fb8a0a",
     "description": "Bash script to execute vcvarsall.bat and get environment variables for use in Bash",
     "homepage": "https://github.com/nathan818fr/vcvars-bash",
     "license": "MIT license",
-    "url": "https://raw.githubusercontent.com/nathan818fr/vcvars-bash/d9be4af161b35ebcf69880277d41cea1ced2d22c/vcvarsall.sh",
+    "url": "https://raw.githubusercontent.com/nathan818fr/vcvars-bash/f33ce60b288aea3a3dc3890edce742cdb5fb8a0a/vcvarsall.sh",
     "hash": "5122d61ccdb2e0d3b530eed8e4c8cda841d470b64e3363ec97956a2e824ca43f",
     "bin": "vcvarsall.sh",
     "checkver": {
